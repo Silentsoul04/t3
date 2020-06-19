@@ -1,0 +1,69 @@
+version: "3.8"
+
+services:
+
+  t3-console:
+    hostname: t3-console
+    container_name: t3-console
+    build:
+      context: ./t3-console
+    ports:
+      - 5000:5000
+    extra_hosts:
+      - "cloned-site:127.0.0.1"
+      - "splunk-web-gui:127.0.0.1"
+
+  cloned-site:
+    image: nginx
+    hostname: cloned-site
+    container_name: cloned-site
+    depends_on:
+      - splunk-web-gui
+    volumes:
+      - ./shared-data/logs:/var/log/nginx
+      - ./cloned-site:/usr/share/nginx/html
+    ports:
+      - 8080:80
+
+  splunk-forwarder:
+    image: splunk/universalforwarder:latest
+    hostname: splunk-forwarder
+    container_name: splunk-forwarder
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=admin
+      - SPLUNK_CMD=add monitor /var/log/ -sourcetype nginx-access-logs
+      - SPLUNK_STANDALONE_URL=splunk-web-gui
+    volumes:
+      - ./shared-data/logs:/var/log
+    ports:
+      - 8089:8089
+
+  splunk-web-gui:
+    image: splunk/splunk:latest
+    hostname: splunk-web-gui
+    container_name: splunk-web-gui
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=admin
+      - SPLUNK_STANDALONE_URL=splunk-web-gui
+    depends_on:
+      - t3-console
+    volumes:
+       - ./shared-data/admin:/opt/splunk/etc/users/admin
+    ports:
+      - 8000:8000
+    extra_hosts:
+      - "cloned-site:127.0.0.1"
+
+  soc-faker:
+    hostname: soc-faker
+    container_name: soc-faker
+    build:
+      context: ./soc-faker
+    command: ["/app/bin/createAccessLogs.py", "/app/bin/securitylab.github.com_PATHS.txt", "5", "10"]
+    depends_on:
+      - cloned-site
+    volumes:
+      - ./shared-data/logs:/app/logs
+

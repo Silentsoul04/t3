@@ -1,0 +1,6 @@
+[submodule "soc-faker"]
+	path = soc-faker
+	url = https://github.com/atstpls/soc-faker
+[submodule "t3-console"]
+	path = t3-console
+	url = https://github.com/atstpls/t3-console

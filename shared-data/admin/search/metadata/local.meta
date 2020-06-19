@@ -1,0 +1,17 @@
+[history/.dummy_history]
+version = 8.0.3
+modtime = 1589224249.291402000
+
+[props/ng/EXTRACT-code]
+owner = admin
+version = 8.0.3
+modtime = 1589225323.498442000
+
+[props/nginx-access-logs/EXTRACT-referer]
+owner = admin
+version = 8.0.3
+modtime = 1589250019.494392000
+
+[ui-prefs/search]
+version = 8.0.3
+modtime = 1591367546.679140000
