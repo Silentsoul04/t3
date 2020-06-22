@@ -208,3 +208,207 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_lt","e
 "1591641971.490","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" ?
 | table _time client_ip code method path query
 | sort -_time","splunk-web-gui","1591641971.952102",0,"UI:Search","1591552800.000000000","1591641971.000000000",1,1591641971,1,2,"1591552800.000000000","1591641971.000000000",completed,"0.32",,,,,,,,,,,,,,,,
+"1592580127.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580127.422393",0,"UI:Search","1592579227.000000000","1592580127.000000000",108,1592580127,108,108,"1592579227.000000000","1592580127.000000000",completed,"0.10300000000000001",,,,,,,,,,,,,,,,
+"1592580141.4","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580141.873086",0,"UI:Search","1592580060.000000000","1592580120.000000000",43,1592580141,43,43,"1592580060.000000000","1592580120.000000000",completed,"0.10400000000000001",,,,,,,,,,,,,,,,
+"1592580182.7","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580182.843249",0,"UI:Search","1592580060.000000000","1592580120.000000000",0,1592580182,0,0,"1592580060.000000000","1592580120.000000000",completed,"0.067",,,,,,,,,,,,,,,,
+"1592580184.8","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580184.264434",0,"UI:Search","1592580060.000000000","1592580120.000000000",0,1592580184,0,0,"1592580060.000000000","1592580120.000000000",completed,"0.049",,,,,,,,,,,,,,,,
+"1592580187.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxxyyy
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580187.341536",0,"UI:Search","1592580060.000000000","1592580120.000000000",0,1592580187,0,0,"1592580060.000000000","1592580120.000000000",completed,"0.084",,,,,,,,,,,,,,,,
+"1592580189.10","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxxyyyzzz
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580189.661756",0,"UI:Search","1592580060.000000000","1592580120.000000000",0,1592580189,0,0,"1592580060.000000000","1592580120.000000000",completed,"0.074",,,,,,,,,,,,,,,,
+"1592580193.11","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxxyyyzzz
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580193.510293",0,"UI:Search","1592580060.000000000","1592580120.000000000",0,1592580193,0,0,"1592580060.000000000","1592580120.000000000",completed,"0.076",,,,,,,,,,,,,,,,
+"1592580203.12","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580203.030342",0,"UI:Search","1592579303.000000000","1592580203.000000000",1,1592580203,1,1,"1592579303.000000000","1592580203.000000000",completed,"0.074",,,,,,,,,,,,,,,,
+"1592580209.13","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580209.124283",0,"UI:Search","1592579309.000000000","1592580209.000000000",3,1592580209,3,3,"1592579309.000000000","1592580209.000000000",completed,"0.055",,,,,,,,,,,,,,,,
+"1592580227.14","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580227.104792",0,"UI:Search","1592579327.000000000","1592580227.000000000",164,1592580227,164,164,"1592579327.000000000","1592580227.000000000",completed,"0.059000000000000004",,,,,,,,,,,,,,,,
+"1592580236.15","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580236.605231",0,"UI:Search","1592579336.000000000","1592580236.000000000",226,1592580236,226,226,"1592579336.000000000","1592580236.000000000",completed,"0.062",,,,,,,,,,,,,,,,
+"1592580315.19","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" admin
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580315.270279",0,"UI:Search","1592579415.000000000","1592580315.000000000",0,1592580315,0,0,"1592579415.000000000","1592580315.000000000",completed,"0.066",,,,,,,,,,,,,,,,
+"1592580318.20","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" admin
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580318.192163",0,"UI:Search","1592579418.000000000","1592580318.000000000",0,1592580318,0,0,"1592579418.000000000","1592580318.000000000",completed,"0.051000000000000004",,,,,,,,,,,,,,,,
+"1592580325.22","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" login
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580325.937562",0,"UI:Search","1592579425.000000000","1592580325.000000000",5,1592580325,5,5,"1592579425.000000000","1592580325.000000000",completed,"0.093",,,,,,,,,,,,,,,,
+"1592580360.26","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" login code=405
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592580360.452650",0,"UI:Search","1592579460.000000000","1592580360.000000000",2,1592580360,2,2,"1592579460.000000000","1592580360.000000000",completed,"0.065",,,,,,,,,,,,,,,,
+"1592582549.2","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592582549.630863",0,"UI:Search","1592581649.000000000","1592582549.000000000",33,1592582549,33,33,"1592581649.000000000","1592582549.000000000",completed,"0.10300000000000001",,,,,,,,,,,,,,,,
+"1592582641.7","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592582641.578036",0,"UI:Search","1592581741.000000000","1592582641.000000000",3,1592582641,3,45,"1592581741.000000000","1592582641.000000000",completed,"0.094",,,,,,,,,,,,,,,,
+"1592582647.8","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592582647.168952",0,"UI:Search","1592581747.000000000","1592582647.000000000",130,1592582647,130,130,"1592581747.000000000","1592582647.000000000",completed,"0.062",,,,,,,,,,,,,,,,
+"1592583299.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583299.282394",0,"UI:Search","1592582399.000000000","1592583299.000000000",540,1592583299,540,540,"1592582399.000000000","1592583299.000000000",completed,"0.14100000000000001",,,,,,,,,,,,,,,,
+"1592583340.14","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 333*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583340.584756",0,"UI:Search","1592582440.000000000","1592583340.000000000",3,1592583340,3,4,"1592582440.000000000","1592583340.000000000",completed,"0.092",,,,,,,,,,,,,,,,
+"1592583348.15","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583348.874950",0,"UI:Search","1592582448.000000000","1592583348.000000000",604,1592583348,604,604,"1592582448.000000000","1592583348.000000000",completed,"0.124",,,,,,,,,,,,,,,,
+"1592583653.1","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583653.744882",0,"UI:Search","1592582753.000000000","1592583653.000000000",0,1592583653,0,0,"1592582753.000000000","1592583653.000000000",completed,"0.07200000000000001",,,,,,,,,,,,,,,,
+"1592583658.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583658.131153",0,"UI:Search","1592582758.000000000","1592583658.000000000",540,1592583658,540,540,"1592582758.000000000","1592583658.000000000",completed,"0.125",,,,,,,,,,,,,,,,
+"1592583658.4","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583658.342685",0,"UI:Search","1592582758.000000000","1592583658.000000000",540,1592583658,540,540,"1592582758.000000000","1592583658.000000000",completed,"0.073",,,,,,,,,,,,,,,,
+"1592583704.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 333*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583704.182144",0,"UI:Search","1592582804.000000000","1592583704.000000000",6,1592583704,6,6,"1592582804.000000000","1592583704.000000000",completed,"0.089",,,,,,,,,,,,,,,,
+"1592583710.11","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592583710.815069",0,"UI:Search","1592582810.000000000","1592583710.000000000",539,1592583710,539,539,"1592582810.000000000","1592583710.000000000",completed,"0.128",,,,,,,,,,,,,,,,
+"1592584138.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584138.896082",0,"UI:Search","1592583238.000000000","1592584138.000000000",588,1592584138,588,588,"1592583238.000000000","1592584138.000000000",completed,"0.122",,,,,,,,,,,,,,,,
+"1592584152.7","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 1111*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584152.283109",0,"UI:Search","1592583252.000000000","1592584152.000000000",0,1592584152,0,0,"1592583252.000000000","1592584152.000000000",completed,"0.065",,,,,,,,,,,,,,,,
+"1592584154.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 111*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584154.615912",0,"UI:Search","1592583254.000000000","1592584154.000000000",3,1592584154,3,3,"1592583254.000000000","1592584154.000000000",completed,"0.088",,,,,,,,,,,,,,,,
+"1592584162.10","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584162.202357",0,"UI:Search","1592583262.000000000","1592584162.000000000",551,1592584162,551,551,"1592583262.000000000","1592584162.000000000",completed,"0.078",,,,,,,,,,,,,,,,
+"1592584311.1","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584311.335417",0,"UI:Search","1592583411.000000000","1592584311.000000000",0,1592584311,0,0,"1592583411.000000000","1592584311.000000000",completed,"0.076",,,,,,,,,,,,,,,,
+"1592584317.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584317.730158",0,"UI:Search","1592583417.000000000","1592584317.000000000",506,1592584317,506,506,"1592583417.000000000","1592584317.000000000",completed,"0.121",,,,,,,,,,,,,,,,
+"1592584362.7","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 555*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584362.589291",0,"UI:Search","1592583462.000000000","1592584362.000000000",3,1592584362,3,3,"1592583462.000000000","1592584362.000000000",completed,"0.117",,,,,,,,,,,,,,,,
+"1592584371.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592584371.296456",0,"UI:Search","1592583471.000000000","1592584371.000000000",527,1592584371,527,527,"1592583471.000000000","1592584371.000000000",completed,"0.116",,,,,,,,,,,,,,,,
+"1592587133.2","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587133.462580",0,"UI:Search","1592586233.000000000","1592587133.000000000",0,1592587133,0,0,"1592586233.000000000","1592587133.000000000",completed,"0.078",,,,,,,,,,,,,,,,
+"1592587139.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587139.091549",0,"UI:Search","1592586239.000000000","1592587139.000000000",0,1592587139,0,0,"1592586239.000000000","1592587139.000000000",completed,"0.07200000000000001",,,,,,,,,,,,,,,,
+"1592587144.4","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587144.188642",0,"UI:Search","1592586244.000000000","1592587144.000000000",0,1592587144,0,0,"1592586244.000000000","1592587144.000000000",completed,"0.073",,,,,,,,,,,,,,,,
+"1592587145.5","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587145.711074",0,"UI:Search","1592586245.000000000","1592587145.000000000",0,1592587145,0,0,"1592586245.000000000","1592587145.000000000",completed,"0.076",,,,,,,,,,,,,,,,
+"1592587146.6","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587146.848674",0,"UI:Search","1592586246.000000000","1592587146.000000000",0,1592587146,0,0,"1592586246.000000000","1592587146.000000000",completed,"0.044",,,,,,,,,,,,,,,,
+"1592587147.8","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587147.744923",0,"UI:Search","1592586247.000000000","1592587147.000000000",0,1592587147,0,0,"1592586247.000000000","1592587147.000000000",completed,"0.079",,,,,,,,,,,,,,,,
+"1592587147.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587147.885719",0,"UI:Search","1592586247.000000000","1592587147.000000000",0,1592587147,0,0,"1592586247.000000000","1592587147.000000000",completed,"0.044",,,,,,,,,,,,,,,,
+"1592587148.10","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587148.881196",0,"UI:Search","1592586248.000000000","1592587148.000000000",0,1592587148,0,0,"1592586248.000000000","1592587148.000000000",completed,"0.049",,,,,,,,,,,,,,,,
+"1592587149.11","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587149.715863",0,"UI:Search","1592586249.000000000","1592587149.000000000",0,1592587149,0,0,"1592586249.000000000","1592587149.000000000",completed,"0.045",,,,,,,,,,,,,,,,
+"1592587150.12","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587150.505658",0,"UI:Search","1592586250.000000000","1592587150.000000000",0,1592587150,0,0,"1592586250.000000000","1592587150.000000000",completed,"0.049",,,,,,,,,,,,,,,,
+"1592587151.13","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587151.808359",0,"UI:Search","1592586251.000000000","1592587151.000000000",0,1592587151,0,0,"1592586251.000000000","1592587151.000000000",completed,"0.051000000000000004",,,,,,,,,,,,,,,,
+"1592587152.14","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587152.824031",0,"UI:Search","1592586252.000000000","1592587152.000000000",0,1592587152,0,0,"1592586252.000000000","1592587152.000000000",completed,"0.07200000000000001",,,,,,,,,,,,,,,,
+"1592587153.15","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587153.662640",0,"UI:Search","1592586253.000000000","1592587153.000000000",0,1592587153,0,0,"1592586253.000000000","1592587153.000000000",completed,"0.044",,,,,,,,,,,,,,,,
+"1592587154.16","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587154.595729",0,"UI:Search","1592586254.000000000","1592587154.000000000",0,1592587154,0,0,"1592586254.000000000","1592587154.000000000",completed,"0.048",,,,,,,,,,,,,,,,
+"1592587178.17","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587178.625887",0,"UI:Search","1592586278.000000000","1592587178.000000000",53,1592587178,53,53,"1592586278.000000000","1592587178.000000000",completed,"0.10200000000000001",,,,,,,,,,,,,,,,
+"1592587179.18","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587179.722397",0,"UI:Search","1592586279.000000000","1592587179.000000000",53,1592587179,53,53,"1592586279.000000000","1592587179.000000000",completed,"0.059000000000000004",,,,,,,,,,,,,,,,
+"1592587295.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587295.319109",0,"UI:Search","1592586395.000000000","1592587295.000000000",112,1592587295,112,112,"1592586395.000000000","1592587295.000000000",completed,"0.108",,,,,,,,,,,,,,,,
+"1592587306.8","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 111*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587306.455964",0,"UI:Search","1592586406.000000000","1592587306.000000000",3,1592587306,3,3,"1592586406.000000000","1592587306.000000000",completed,"0.093",,,,,,,,,,,,,,,,
+"1592587312.10","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587312.952210",0,"UI:Search","1592586412.000000000","1592587312.000000000",112,1592587312,112,112,"1592586412.000000000","1592587312.000000000",completed,"0.099",,,,,,,,,,,,,,,,
+"1592587697.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587697.144308",0,"UI:Search","1592586797.000000000","1592587697.000000000",264,1592587697,264,264,"1592586797.000000000","1592587697.000000000",completed,"0.11",,,,,,,,,,,,,,,,
+"1592587736.7","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" xxx*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587736.387913",0,"UI:Search","1592586836.000000000","1592587736.000000000",3,1592587736,3,3,"1592586836.000000000","1592587736.000000000",completed,"0.094",,,,,,,,,,,,,,,,
+"1592587746.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587746.166995",0,"UI:Search","1592586846.000000000","1592587746.000000000",331,1592587746,331,331,"1592586846.000000000","1592587746.000000000",completed,"0.114",,,,,,,,,,,,,,,,
+"1592587762.10","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587762.915153",0,"UI:Search","1592586862.000000000","1592587762.000000000",331,1592587762,331,331,"1592586862.000000000","1592587762.000000000",completed,"0.07200000000000001",,,,,,,,,,,,,,,,
+"1592587773.11","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587773.742595",0,"UI:Search","1592586873.000000000","1592587773.000000000",331,1592587773,331,331,"1592586873.000000000","1592587773.000000000",completed,"0.07",,,,,,,,,,,,,,,,
+"1592587776.12","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587776.303566",0,"UI:Search","1592586876.000000000","1592587776.000000000",331,1592587776,331,331,"1592586876.000000000","1592587776.000000000",completed,"0.066",,,,,,,,,,,,,,,,
+"1592587777.13","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587777.553282",0,"UI:Search","1592586877.000000000","1592587777.000000000",331,1592587777,331,331,"1592586877.000000000","1592587777.000000000",completed,"0.076",,,,,,,,,,,,,,,,
+"1592587778.14","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587778.673309",0,"UI:Search","1592586878.000000000","1592587778.000000000",331,1592587778,331,331,"1592586878.000000000","1592587778.000000000",completed,"0.065",,,,,,,,,,,,,,,,
+"1592587779.15","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587779.702565",0,"UI:Search","1592586879.000000000","1592587779.000000000",331,1592587779,331,331,"1592586879.000000000","1592587779.000000000",completed,"0.065",,,,,,,,,,,,,,,,
+"1592587783.16","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587783.926105",0,"UI:Search","1592586883.000000000","1592587783.000000000",331,1592587783,331,331,"1592586883.000000000","1592587783.000000000",completed,"0.065",,,,,,,,,,,,,,,,
+"1592587785.17","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587785.075886",0,"UI:Search","1592586885.000000000","1592587785.000000000",331,1592587785,331,331,"1592586885.000000000","1592587785.000000000",completed,"0.067",,,,,,,,,,,,,,,,
+"1592587786.18","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592587786.087753",0,"UI:Search","1592586886.000000000","1592587786.000000000",331,1592587786,331,331,"1592586886.000000000","1592587786.000000000",completed,"0.068",,,,,,,,,,,,,,,,
+"1592590790.3","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log""
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592590790.440402",0,"UI:Search","1592589890.000000000","1592590790.000000000",65,1592590790,65,65,"1592589890.000000000","1592590790.000000000",completed,"0.11",,,,,,,,,,,,,,,,
+"1592590833.8","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 111*
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592590833.837213",0,"UI:Search","1592589933.000000000","1592590833.000000000",3,1592590833,3,68,"1592589933.000000000","1592590833.000000000",completed,"0.091",,,,,,,,,,,,,,,,
+"1592590849.9","search index=main sourcetype=""nginx-access-logs"" source=""/var/log/access.log"" 
+| table _time client_ip code method path query
+| sort -_time","splunk-web-gui","1592590849.783849",0,"UI:Search","1592589949.000000000","1592590849.000000000",142,1592590849,142,142,"1592589949.000000000","1592590849.000000000",completed,"0.059000000000000004",,,,,,,,,,,,,,,,

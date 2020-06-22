@@ -31,7 +31,7 @@ services:
     container_name: splunk-forwarder
     environment:
       - SPLUNK_START_ARGS=--accept-license
-      - SPLUNK_PASSWORD=admin
+      - SPLUNK_PASSWORD=admin12345
       - SPLUNK_CMD=add monitor /var/log/ -sourcetype nginx-access-logs
       - SPLUNK_STANDALONE_URL=splunk-web-gui
     volumes:
@@ -45,7 +45,7 @@ services:
     container_name: splunk-web-gui
     environment:
       - SPLUNK_START_ARGS=--accept-license
-      - SPLUNK_PASSWORD=admin
+      - SPLUNK_PASSWORD=admin12345
       - SPLUNK_STANDALONE_URL=splunk-web-gui
     depends_on:
       - t3-console
