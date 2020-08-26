@@ -44,3 +44,4 @@ venv
 app.db
 t3.log*
 
+.vagrant

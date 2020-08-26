@@ -4,3 +4,7 @@
 [submodule "t3-console"]
 	path = t3-console
 	url = https://github.com/atstpls/t3-console
+[submodule "server/docker-shell"]
+	path = server/docker-shell
+	url = https://github.com/atstpls/docker-shell
+	branch = master

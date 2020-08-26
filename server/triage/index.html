@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="/js/vendor/jquery.min.js"></script>
+  <script src="/js/vendor/clipboard.min.js"></script>
+  <script src="/js/clipboard.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+
+<title>Triage and Response</title>
+</head>
+<body class="__fb-dark-mode">
+  <nav>
+    <div class="icon-bar">
+      <a accesskey="h" class="icon wide" href="/"><i class="icon-home"></i></a>
+    </div>
+    <div class="caption">
+      Tests:
+    </div>
+    <a class="document" href="/Command%20Injection">Command Injection</a>
+    <a class="document" href="/Cross%20Site%20Scripting">Cross Site Scripting</a>
+    <a class="document" href="/File%20Upload">File Upload</a>
+    <a class="document" href="/Local%20File%20Inclusion">Local File Inclusion</a>
+    <a class="document" href="/Password%20Guessing">Password Guessing</a>
+    <a class="document" href="/Path%20Traversal">Path Traversal</a>
+    <a class="document" href="/Remote%20File%20Inclusion">Remote File Inclusion</a>
+    <a class="document" href="/SQL%20Injection">SQL Injection</a>
+  </nav>
+  <div class="main with-sidebar">
+    <div class="breadcrumbs"><a href="/">Home</a> / <span>Path Traversal</span></div>
+
+
+<h1>Triage and Response</h1>
+
+<div id="alert">Here is an alert to triage:</div>
+<br>
+<br>
+
+<img src="https://someothersite.s3.amazonaws.com/brucelee.jpg" height="120" width="210"></img>
+
+<br>
+<br>
+
+<p id="task">Use <a href="http://localhost:8000/en-US/account/login?return_to=%2Fen-US%2Fapp%2Fsearch%2Fsearch">Splunk</a> to investigate web requests.</p>
+<br>
+<p id="task">Use <a href="http://localhost:8000/en-US/account/login?return_to=%2Fen-US%2Fapp%2Fsearch%2Fsearch"></a> to investigate the victim host</p>
+<br>
+
+<p id="task">When you are ready to begin, start the timer below.</p>
+
+<br>
+<button id="start" onclick="pushButton();">Start Timer</button>
+<br>
+
+<div id="enter"></div>
+
+<div id="result"></div>
+
+<div id="display"></div>
+
+<button id="clearbtn" onclick="onTimesUp();">Clear</button>
+<p id="clear"></p> 
+
+<button id="hashbtn" onclick="hash();">hash</button>
+<p id="hash"></p> 
+
+<script>
+  function hash () {
+    var hash = CryptoJS.MD5("danaher").toString();
+    document.getElementById("hash").innerHTML = hash;
+  }
+
+</script>
+<script src="app.js"></script>
+
+
+</body>
+</html>

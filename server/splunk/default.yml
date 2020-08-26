@@ -1,0 +1,237 @@
+---
+ansible_connection: local
+ansible_environment: {}
+ansible_post_tasks: null
+ansible_pre_tasks: null
+cert_prefix: https
+config:
+  baked: default.yml
+  defaults_dir: /tmp/defaults
+  env:
+    headers: null
+    var: SPLUNK_DEFAULTS_URL
+    verify: true
+  host:
+    headers: null
+    url: null
+    verify: true
+  max_delay: 60
+  max_retries: 3
+  max_timeout: 1200
+dmc_asset_interval: 3,18,33,48 * * * *
+dmc_forwarder_monitoring: false
+docker: true
+es_ssl_enablement: --ssl_enablement auto
+hide_password: false
+java_download_url: null
+java_update_version: null
+java_version: null
+retry_delay: 6
+retry_num: 60
+shc_sync_retry_num: 60
+splunk:
+  admin_user: admin
+  allow_upgrade: true
+  app_paths:
+    default: /opt/splunk/etc/apps
+    deployment: /opt/splunk/etc/deployment-apps
+    httpinput: /opt/splunk/etc/apps/splunk_httpinput
+    idxc: /opt/splunk/etc/master-apps
+    shc: /opt/splunk/etc/shcluster/apps
+  appserver:
+    port: 8065
+  asan: false
+  auxiliary_cluster_masters: []
+  build_url_bearer_token: null
+  cluster_master_url: null
+  conf:
+  conf:
+    - key: inputs
+      value:
+        directory: /opt/splunk/etc/system/local
+        content:
+          monitor:///var/log/clone/access.log:
+            disabled : false
+            index : main
+            sourcetype : access_combined
+          monitor:///var/log/faker/access.log:
+            disabled : false
+            index : main
+            sourcetype : access_combined
+          monitor:///var/log/bwapp/access.log:
+            disabled : false
+            index : main
+            sourcetype : access_combined
+          monitor:///var/log/dvwa/access.log:
+            disabled : false
+            index : main
+            sourcetype : access_combined
+          monitor:///var/log/bwapp/error.log:
+            disabled : false
+            index : main
+            sourcetype : post_data
+          monitor:///var/log/dvwa/error.log:
+            disabled : false
+            index : main
+            sourcetype : post_data
+    - key: inputs
+      value:
+        directory: /opt/splunk/etc/system/local
+        content:
+          splunktcp://9997:
+            disabled : 0
+    - key: transforms
+      value:
+        directory: /opt/splunk/etc/system/local
+        content:
+          change_host_names:
+            SOURCE_KEY: MetaData:Source
+            DEST_KEY : MetaData:Host
+            REGEX : source::/var/log/(\w+)/
+            FORMAT : host::$1
+    - key: props
+      value:
+        directory: /opt/splunk/etc/system/local
+        content:
+          host::splunk:
+            TRANSFORMS-class : change_host_names
+            SHOULD_LINEMERGE : false
+    - key: user-prefs
+      value:
+        directory: /opt/splunk/etc/users/admin/user-prefs/local
+        content:
+          general:
+            search_syntax_highlighting: dark
+            render_version_messages : 1
+            dismissedInstrumentationOptInVersion : 4
+            hideInstrumentationOptInModal : 1
+            notification_python_3_impact : false
+            eai_app_only : False
+            eai_results_per_page : 25
+            default_namespace : search
+            search_use_advanced_editor : true
+            search_line_numbers : false
+            search_auto_format : false
+            checked_new_maintenance_version : 8.0.5
+            checked_new_version : 8.0.5
+            new_maintenance_version : 1
+            new_version : 1
+            tz : America/Chicago
+    - key: props
+      value:
+        directory: /opt/splunk/etc/users/admin/search/local  
+        content:
+          access:
+            EXTRACT-client_ip : ^(?<client_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})
+            EXTRACT-method : \"(?<method>[A-Z]{3,4})\s\/
+            EXTRACT-path : \s(?<path>\/[^\s\?]+)
+            EXTRACT-query : (?<query>\?[^\s]+)\sHTTP
+            EXTRACT-useragent : ^(?:[^"\n]*"){5}(?P<useragent>[^"]+)
+            EXTRACT-code : ^(?:[^ \n]* ){8}(?P<code>\d+)
+            EXTRACT-referer : ^(?:[^"\n]*"){3}(?P<referer>[^"]+)
+    - key: ui-tour
+      value:
+        directory: /opt/splunk/etc/users/admin/search/local  
+        content:
+          search-tour:
+            viewed : 1
+    - key: ui-prefs
+      value:
+        directory: /opt/splunk/etc/users/admin/search/local  
+        content:
+          search:
+            display.page.search.mode : verbose
+  connection_timeout: 0
+  deployer_url: null
+  dfs:
+    dfc_num_slots: 4
+    dfw_num_slots: 10
+    dfw_num_slots_enabled: false
+    enable: false
+    port: 9000
+    spark_master_host: 127.0.0.1
+    spark_master_webui_port: 8080
+  dsp:
+    cert: null
+    enable: false
+    pipeline_desc: null
+    pipeline_name: null
+    pipeline_spec: null
+    server: forwarders.scp.splunk.com:9997
+    verify: false
+  enable_service: false
+  es:
+    ssl_enablement: auto
+  exec: /opt/splunk/bin/splunk
+  group: splunk
+  hec:
+    cert: null
+    enable: true
+    password: null
+    port: 8088
+    ssl: true
+    token: 9c156575-815f-467c-a1da-ee024acbc692
+  home: /opt/splunk
+  http_enableSSL: false
+  http_enableSSL_cert: null
+  http_enableSSL_privKey: null
+  http_enableSSL_privKey_password: null
+  http_port: 8000
+  idxc:
+    discoveryPass4SymmKey: CJf1H9123E7N1LoXhqhHaMJY5VSes0O8
+    label: idxc_label
+    pass4SymmKey: CJf1H9123E7N1LoXhqhHaMJY5VSes0O8
+    replication_factor: 3
+    replication_port: 9887
+    search_factor: 3
+    secret: CJf1H9123E7N1LoXhqhHaMJY5VSes0O8
+  ignore_license: false
+  kvstore:
+    port: 8191
+  launch: {}
+  license_download_dest: /tmp/splunk.lic
+  license_master_url: ''
+  multisite_master_port: 8089
+  multisite_replication_factor_origin: 2
+  multisite_replication_factor_total: 3
+  multisite_search_factor_origin: 1
+  multisite_search_factor_total: 3
+  opt: /opt
+  pass4SymmKey: null
+  password: admin12345
+  pid: /opt/splunk/var/run/splunk/splunkd.pid
+  root_endpoint: null
+  s2s:
+    ca: null
+    cert: null
+    enable: true
+    password: null
+    port: 9997
+    ssl: false
+  search_head_captain_url: null
+  secret: null
+  service_name: null
+  set_search_peers: true
+  shc:
+    deployer_push_mode: null
+    label: shc_label
+    pass4SymmKey: sS2XtH4MNxQobX07gQGZE2mFu5RQvvrp
+    replication_factor: 3
+    replication_port: 9887
+    secret: sS2XtH4MNxQobX07gQGZE2mFu5RQvvrp
+  smartstore: null
+  ssl:
+    ca: null
+    cert: null
+    enable: true
+    password: null
+  svc_port: 8089
+  tar_dir: splunk
+  user: splunk
+  wildcard_license: false
+splunk_home_ownership_enforcement: true
+splunkbase_password: null
+splunkbase_token: null
+splunkbase_username: null
+wait_for_splunk_retry_num: 60
+
